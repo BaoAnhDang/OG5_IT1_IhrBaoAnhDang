@@ -13,13 +13,41 @@ public class MyActionListener implements ActionListener {
 		Object obj = e.getSource();
 		if (obj == f.btnBeenden)
 			System.exit(0);
-		
-		if (obj == f.btnEinfuellen) {
-			 double fuellstand = f.myTank.getFuellstand();
-			 fuellstand = fuellstand + 5;
-			 f.myTank.setFuellstand(fuellstand);
 
-			 f.lblFuellstand.setText(""+fuellstand);
+		if (obj == f.btnVerbrauchen) {
+			double fuellstand = f.myTank.getFuellstand();
+			double prozent = f.myTank.getProzent();
+			fuellstand = fuellstand - 2;
+			prozent = fuellstand / 200 * 100; 
+			f.myTank.setFuellstand(fuellstand);
+			f.myTank.setProzent(prozent);
+			f.lblFuellstand.setText(""+fuellstand);
+			f.lblProzent.setText("Prozent: "+prozent+ "%");
+		}
+		
+		if (obj == f.btnZuruecksetzen) {
+			double fuellstand = f.myTank.getFuellstand();
+			double prozent = f.myTank.getProzent();
+			fuellstand = 0;
+			prozent = 0;
+			f.myTank.setFuellstand(fuellstand);
+			f.myTank.setProzent(prozent);
+			
+			f.lblFuellstand.setText(""+fuellstand);
+			f.lblProzent.setText("Prozent: "+prozent+ "%");
+		}
+
+		if (obj == f.btnEinfuellen) {
+			double fuellstand = f.myTank.getFuellstand();
+			double prozent = f.myTank.getProzent();
+			fuellstand = fuellstand + 5;
+			prozent = fuellstand / 200 * 100;
+			f.myTank.setFuellstand(fuellstand);
+			f.myTank.setProzent(prozent);
+
+			f.lblFuellstand.setText(""+fuellstand);
+			f.lblProzent.setText("Prozent: "+prozent+ "%");
+
 		}
 
 	}
