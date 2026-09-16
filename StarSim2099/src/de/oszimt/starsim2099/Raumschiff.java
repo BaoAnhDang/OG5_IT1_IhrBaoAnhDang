@@ -9,9 +9,54 @@ package de.oszimt.starsim2099;
 public class Raumschiff {
 
 	// Attribute
-	
-	// Methoden
 
+	// Methoden
+	public void setTyp(String typ) {
+
+	}
+
+	public void setAntrieb(String Antrieb) {
+
+	}
+
+	public void setMaxKapazitaet(int maxKapazitaet) {
+
+	}
+
+	public void setWinkel(int winkel) {
+
+	}
+
+	public void setPosX(double PosX) {
+
+	}
+
+	public void setPosY(double PosY) {
+
+	}
+	
+	public String getTyp() {
+		return null;
+	}
+	
+	public String getAntrieb() {
+		return null;
+	}
+	
+	public int getMaxKapazitaet() {
+		return 0;
+	}
+	
+	public int getWinkel() {
+		return 0;
+	}
+	
+	public int getPosX() {
+		return 0;
+	}
+	public int getPosY() {
+		return 0;
+	}
 	// Darstellung
 	public static char[][] getDarstellung() {
 		char[][] raumschiffShape = { 
@@ -23,5 +68,4 @@ public class Raumschiff {
 		};
 		return raumschiffShape;
 	}
-
 }
