@@ -9,36 +9,51 @@ package de.oszimt.starsim2099;
 public class Ladung {
 
 	// Attribute
+	private String typ;
+	private int masse;
+	private double posX;
+	private double posY;
 
 	// Methoden
-	public void setTyp(String Typ) {
-
+	public void setTyp(String typ) {
+		this.typ = typ;
 	}
+
 	public void setMasse(int masse) {
-
+		this.masse = masse;
 	}
-	public void setPosX(double PosX) {
 
+	public void setPosX(double posX) {
+		this.posX = posX;
 	}
-	public void setPosY(double PosY) {
 
+	public void setPosY(double posY) {
+		this.posY = posY;
 	}
-	
+
 	public String getTyp() {
-		return null;
+		return typ;
 	}
+
 	public int getMasse() {
-		return 0;
+		return masse;
 	}
-	public int getPosX() {
-		return 0;
+
+	public double getPosX() {
+		return posX;
 	}
-	public int getPosY() {
-		return 0;
+
+	public double getPosY() {
+		return posY;
 	}
-	// Darstellung
+
 	public static char[][] getDarstellung() {
-		char[][] ladungShape = { { '/', 'X', '\\' }, { '|', 'X', '|' }, { '\\', 'X', '/' } };
+		char[][] ladungShape = {
+				{ '/', 'X', '\\' },
+				{ '|', 'X', '|' },
+				{ '\\', 'X', '/' }
+		};
+
 		return ladungShape;
 	}
 }

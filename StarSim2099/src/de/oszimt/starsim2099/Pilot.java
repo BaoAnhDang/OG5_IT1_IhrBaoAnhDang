@@ -9,38 +9,41 @@ package de.oszimt.starsim2099;
 public class Pilot {
 
 	// Attribute
-	String grad;
-	String name;
+    private String grad;
+    private String name;
+    private double posX;
+    private double posY;
 
-	// Methoden
-	public void setGrad(String grad) {
+    // Methoden
+    public void setGrad(String grad) {
+        this.grad = grad;
+    }
 
-	}
-	
-	public void setName(String name) {
-		
-	}
+    public void setName(String name) {
+        this.name = name;
+    }
 
-	public void setPosX(double posX) {
-		
-	}
-	
-	public void setPosY(double posY) {
-		
-	}
-	
-	public String getGrad() {
-		return null;
-	}
-	public String getName() {
-		return null;
-	}
-	
-	public double getPosX() {
-		return 0;
-	}
-	
-	public double getPosY() {
-		return 0;
-	}
+    public void setPosX(double posX) {
+        this.posX = posX;
+    }
+
+    public void setPosY(double posY) {
+        this.posY = posY;
+    }
+
+    public String getGrad() {
+        return grad;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public double getPosX() {
+        return posX;
+    }
+
+    public double getPosY() {
+        return posY;
+    }
 }
