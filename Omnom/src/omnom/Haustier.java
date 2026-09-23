@@ -1,0 +1,58 @@
+package omnom;
+
+public class Haustier {
+
+	int hunger = 100;
+	int muede = 100;
+	int zufrieden = 100;
+	int gesund = 100;
+	String name;
+	
+	public Haustier(String name) {
+		this.name = name;
+	}
+	
+	public int getHunger() {
+		return hunger;
+	}
+	public void setHunger(int hunger) {
+		this.hunger = hunger;
+	}
+	public int getMuede() {
+		return muede;
+	}
+	public void setMuede(int muede) {
+		this.muede = muede;
+	}
+	public int getZufrieden() {
+		return zufrieden;
+	}
+	public void setZufrieden(int zufrieden) {
+		this.zufrieden = zufrieden;
+	}
+	public int getGesund() {
+		return gesund;
+	}
+	public void setGesund(int gesund) {
+		this.gesund = gesund;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	public void fuettern(int anzahl) {
+		
+	}
+	public void schlafen(int dauer) {
+		
+	}
+	public void spielen(int dauer) {
+		
+	}
+	public void heilen() {
+		
+	}
+}
